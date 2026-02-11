@@ -345,7 +345,7 @@ public class ZeitItem extends Item {
             fallingBlock.time = fallingBlock.time - 1;
 
             // Schaden auf 0 setzen
-            fallingBlock.setHurtsEntities(false);
+            fallingBlock.setHurtsEntities(0.0F, 0);
 
             // Custom NBT für Wiederherstellung
             CompoundTag motionTag = new CompoundTag();
@@ -602,7 +602,7 @@ public class ZeitItem extends Item {
                                 // Verhindere das Aufprallen/Block-Erstellen
                                 fallingBlock.time = fallingBlock.time - 1; // Zähler einfrieren
                                 // Stelle sicher, dass kein Schaden verursacht wird (FLOAT Wert)
-                                fallingBlock.setHurtsEntities(false);
+                                fallingBlock.setHurtsEntities(0.0F, 0);
                             }
 
                             // Visual Feedback
