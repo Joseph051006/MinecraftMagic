@@ -344,6 +344,9 @@ public class ZeitItem extends Item {
             // FallingBlock Timer einfrieren
             fallingBlock.time = fallingBlock.time - 1;
 
+            // Schaden auf 0 setzen
+            fallingBlock.setHurtsEntities(false);
+
             // Custom NBT für Wiederherstellung
             CompoundTag motionTag = new CompoundTag();
             motionTag.putDouble("motionX", 0);
@@ -598,6 +601,7 @@ public class ZeitItem extends Item {
                             if (entity instanceof FallingBlockEntity fallingBlock) {
                                 // Verhindere das Aufprallen/Block-Erstellen
                                 fallingBlock.time = fallingBlock.time - 1; // Zähler einfrieren
+                                // Stelle sicher, dass kein Schaden verursacht wird (FLOAT Wert)
                                 fallingBlock.setHurtsEntities(false);
                             }
 
@@ -614,38 +618,6 @@ public class ZeitItem extends Item {
                         }
                     }
                 }
-            }
-        }
-
-        private static boolean isFrozenProjectile(Entity entity) {
-            if (!(entity instanceof AbstractArrow ||
-                    entity instanceof Snowball ||
-                    entity instanceof Fireball ||
-                    entity instanceof ThrownTrident)) {
-                return false;
-            }
-
-            CompoundTag tag = entity.getPersistentData();
-            return tag.getBoolean(NBT_ARROW_FROZEN);
-        }
-
-        private static void handleFrozenProjectile(Entity projectile, ServerLevel world) {
-            // Halte das Projektil komplett an
-            projectile.setDeltaMovement(Vec3.ZERO);
-            projectile.hasImpulse = false;
-
-            // Verhindere Position-Updates
-            projectile.setPos(projectile.xOld, projectile.yOld, projectile.zOld);
-
-            // Visual Feedback
-            if (world.getGameTime() % 5 == 0) {
-                world.sendParticles(ParticleTypes.ENCHANT,
-                        projectile.getX(),
-                        projectile.getY() + projectile.getBbHeight() * 0.5,
-                        projectile.getZ(),
-                        1,
-                        0.1, 0.1, 0.1,
-                        0);
             }
         }
 
