@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 public class UnicornRenderer extends MobRenderer<UnicornEntity, UnicornModel<UnicornEntity>> {
 
     // Ensure the file is exactly at: src/main/resources/assets/meinemod/textures/entity/abomination.png
-    private static final ResourceLocation TEXTURE = new ResourceLocation("meinemod", "textures/entity/begleiter-1.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation("meinemod", "textures/entity/abomination.png");
 
     public UnicornRenderer(EntityRendererProvider.Context context) {
         // This links the custom model and the unique layer we created to avoid the Horse crash

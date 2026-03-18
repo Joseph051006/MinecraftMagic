@@ -106,8 +106,11 @@ public static class RegistrationEvents {
     public static void onEntityAttributes(EntityAttributeCreationEvent event) {
         // This gives the Unicorn its 'soul' (Health and Speed)
         event.put(UNICORN.get(), UnicornEntity.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 20.0D)
+                .add(Attributes.MAX_HEALTH, 2000.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.ATTACK_DAMAGE, 150.0D) // THIS FIXES THE ERROR
+            .add(Attributes.FOLLOW_RANGE, 24.0D)
+
                 .build());
     }
 }
