@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "meinemod:item/super_feuer_waffe"
+  }
+}
