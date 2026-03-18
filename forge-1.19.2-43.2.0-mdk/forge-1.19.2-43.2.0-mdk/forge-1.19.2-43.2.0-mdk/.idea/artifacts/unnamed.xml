@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact name="unnamed">
-    <output-path>$USER_HOME$/AppData/Roaming/.minecraft/mods</output-path>
-    <root id="root">
-      <element id="file-copy" path="$PROJECT_DIR$/build/libs/modid-1.0.jar" />
-    </root>
-  </artifact>
-</component>
