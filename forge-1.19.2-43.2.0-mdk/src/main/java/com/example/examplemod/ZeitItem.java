@@ -288,6 +288,7 @@ public class ZeitItem extends Item {
 
                 tag.putInt(NBT_ANIMATION_TICK, 0);
                 tag.putInt(NBT_CUSTOM_MODEL_DATA, 0);
+
             } else {
                 // Unfreeze mit WIEDERHERGESTELLTEN Geschwindigkeiten
                 unfreezeAll(world, player, radius);
@@ -326,7 +327,6 @@ public class ZeitItem extends Item {
             if (isProjectile(entity)) {
                 projectileVelocities.put(entity.getUUID(), entity.getDeltaMovement());
 
-                // Speichere auch in NBT für Persistenz
                 CompoundTag tag = entity.getPersistentData();
                 CompoundTag velocityTag = new CompoundTag();
                 Vec3 velocity = entity.getDeltaMovement();
@@ -337,13 +337,11 @@ public class ZeitItem extends Item {
             }
         }
 
-        // Speichere fallende Entities (Sand, Kies, etc.)
         for (Entity entity : allEntities) {
             if (isFallingEntity(entity)) {
                 Vec3 velocity = entity.getDeltaMovement();
                 entityVelocities.put(entity.getUUID(), velocity);
 
-                // Speichere in NBT für Persistenz
                 CompoundTag tag = entity.getPersistentData();
                 CompoundTag velocityTag = new CompoundTag();
                 velocityTag.putDouble("X", velocity.x);
@@ -455,7 +453,7 @@ public class ZeitItem extends Item {
         }
 
         // ======================================================
-        // VERBESSERT: FALLENDE BLÖCKE SOFORT EINFRIEREN
+        // FALLENDE BLÖCKE SOFORT EINFRIEREN
         // ======================================================
         List<FallingBlockEntity> fallingBlocks = world.getEntitiesOfClass(
                 FallingBlockEntity.class,

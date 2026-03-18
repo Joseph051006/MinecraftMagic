@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "meinemod:item/zeit_item_0"
-  }
-}
