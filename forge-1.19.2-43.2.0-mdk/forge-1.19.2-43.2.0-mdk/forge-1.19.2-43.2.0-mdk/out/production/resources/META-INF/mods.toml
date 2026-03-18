@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="meinemod"
+version="1.0.0"
+displayName="Fireball Mod"
+description="Shoots fireballs!"
+authors="Ernis"
