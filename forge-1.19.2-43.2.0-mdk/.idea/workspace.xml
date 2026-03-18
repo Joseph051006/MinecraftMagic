@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a487bc51-47df-42ce-9c24-bc0a42c8e16d" name="Changes" comment="" />
+    <list default="true" id="292e8b84-a6ca-47c1-86ee-5e37ab1cbe23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/meinemod/textures/item/zeit_item_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/CREDITS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/java/com/example/examplemod/BlitzZauberstabItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/java/com/example/examplemod/EisItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/java/com/example/examplemod/SuperFeuerItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/java/com/example/examplemod/ZeitItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/META-INF/mods.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/lang/de_de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/models/item/blitz_zauberstab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/models/item/super_feuer_waffe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/models/item/zeit_item.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/textures/item/blitz_zauberstab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/textures/item/creative_spitzhacke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/textures/item/feuer_waffe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/assets/meinemod/textures/item/zeit_item_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/src/main/resources/pack.mcmeta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk">
+    <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <task path="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk">
           <activation />
         </task>
@@ -59,39 +98,121 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="38sjwjgFu07QQNx0qwPQS2dzM4F" />
+  <component name="ProjectId" id="36RNJTvswjrBD1dnPidu2Sbhgzz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.C:/Users/finnh/Documents/BFO/Schuljahr_2025-26/EMVS/MinecraftMod/MinecraftMagic/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.C:/Users/finnh/Downloads/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.forge-1.19.2-43.2.0-mdk [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.forge-1.19.2-43.2.0-mdk.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Finn&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/finnh/Documents/BFO/Schuljahr_2025-26/EMVS/MinecraftMod/MinecraftMagic/forge-1.19.2-43.2.0-mdk&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.C:/Users/90210/Desktop/Schule/EmVs Lehrjahr 1/014-319Modul/forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor": "Run",
+    "Gradle.C:/Users/90210/Downloads/forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor": "Run",
+    "Gradle.C:/Users/finnh/Documents/BFO/Schuljahr_2025-26/EMVS/MinecraftMod/MinecraftMagic/forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor": "Run",
+    "Gradle.Run minecraft.executor": "Run",
+    "Gradle.forge-1.19.2-43.2.0-mdk [build].executor": "Run",
+    "Gradle.forge-1.19.2-43.2.0-mdk [createMcpToSrg].executor": "Run",
+    "Gradle.forge-1.19.2-43.2.0-mdk [jarJar].executor": "Run",
+    "Gradle.forge-1.19.2-43.2.0-mdk [jar].executor": "Run",
+    "Gradle.forge-1.19.2-43.2.0-mdk [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Finn",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/finnh/Documents/BFO/Schuljahr_2025-26/EMVS/MinecraftMod/MinecraftMagic/forge-1.19.2-43.2.0-mdk",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tadej\Documents\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\textures\item" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\textures\item" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\models\item" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources\run" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\finnh\Documents\BFO\Schuljahr_2025-26\EMVS\MinecraftMod\MinecraftMagic\forge-1.19.2-43.2.0-mdk\forge-1.19.2-43.2.0-mdk\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\textures\item" />
+      <recent name="C:\Users\finnh\Documents\BFO\Schuljahr_2025-26\EMVS\MinecraftMod\MinecraftMagic\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\textures\item" />
+      <recent name="C:\Users\finnh\Documents\BFO\Schuljahr_2025-26\EMVS\MinecraftMod\MinecraftMagic\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\models\item" />
+      <recent name="C:\Users\tadej\Documents\forge-1.19.2-43.2.0-mdk\src\main\resources\assets\meinemod\textures\item" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources" />
+      <recent name="C:\Users\90210\Desktop\Schule\EmVs Lehrjahr 1\014-319Modul\forge-1.19.2-43.2.0-mdk\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.forge-1.19.2-43.2.0-mdk [jar]">
+  <component name="RunManager" selected="Gradle.forge-1.19.2-43.2.0-mdk [build]">
+    <configuration name="Run minecraft" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="forge-1.19.2-43.2.0-mdk [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="forge-1.19.2-43.2.0-mdk [jarJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jarJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="forge-1.19.2-43.2.0-mdk [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -110,17 +231,19 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="forge-1.19.2-43.2.0-mdk" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+    <configuration name="forge-1.19.2-43.2.0-mdk [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/forge-1.19.2-43.2.0-mdk/forge-1.19.2-43.2.0-mdk" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list />
+          <list>
+            <option value="test" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -132,18 +255,24 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.forge-1.19.2-43.2.0-mdk [build]" />
+        <item itemvalue="Gradle.forge-1.19.2-43.2.0-mdk [test]" />
         <item itemvalue="Gradle.forge-1.19.2-43.2.0-mdk [jar]" />
+        <item itemvalue="Gradle.forge-1.19.2-43.2.0-mdk [jarJar]" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a487bc51-47df-42ce-9c24-bc0a42c8e16d" name="Changes" comment="" />
-      <created>1769595412378</created>
+      <changelist id="292e8b84-a6ca-47c1-86ee-5e37ab1cbe23" name="Changes" comment="" />
+      <created>1764965351701</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1769595412378</updated>
+      <updated>1764965351701</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/forge_1_19_2_43_2_0_mdk$forge_1_19_2_43_2_0_mdk__jar_.ic" NAME="forge-1.19.2-43.2.0-mdk [jar] Coverage Results" MODIFIED="1773213625059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
