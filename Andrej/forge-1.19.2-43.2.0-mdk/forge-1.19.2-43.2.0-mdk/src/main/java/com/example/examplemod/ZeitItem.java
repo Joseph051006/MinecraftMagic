@@ -86,6 +86,15 @@ private void unfreezeAlleMobs(Level world, Player player) {
         }
     }
 }
+private void spawnFreezeEffekt(Level world, Player player) {
+    world.playSound(null, player.blockPosition(), SoundEvents.WITHER_SPAWN, SoundSource.PLAYERS, 1.0F, 0.5F);
+    for (int i = 0; i < 50; i++) {
+        double x = player.getX() + world.random.nextGaussian() * 5;
+        double y = player.getY() + 2 + world.random.nextFloat() * 3;
+        double z = player.getZ() + world.random.nextGaussian() * 5;
+        world.addParticle(ParticleTypes.REVERSE_PORTAL, x, y, z, 0, 0, 0);
+    }
+}
 
     private void spawnUnfreezeEffekt(Level world, Player player) {
         world.playSound(null, player.blockPosition(), SoundEvents.ENDER_DRAGON_DEATH, SoundSource.PLAYERS, 0.5F, 2.0F);

@@ -100,7 +100,6 @@ public class EisItem extends Item {
 
     public EisItem() {
         super(new Item.Properties()
-                .tab(null)
                 .stacksTo(1)
                 .rarity(Rarity.RARE)
                 .durability(512));
