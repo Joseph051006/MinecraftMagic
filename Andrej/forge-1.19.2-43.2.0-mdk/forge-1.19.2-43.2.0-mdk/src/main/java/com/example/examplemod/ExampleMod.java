@@ -61,7 +61,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import javax.annotation.Nullable;
-import javax.swing.*;
 
 import screen.ModMenuTypes;
 import screen.SkillTreeMenu;
@@ -69,8 +68,6 @@ import screen.SkillTreeScreen;
 import unicornEntity.UnicornEntity;
 import unicornEntity.UnicornModel;
 
-import java.awt.image.renderable.RenderContext;
-import java.awt.image.renderable.RenderableImage;
 import java.util.List;
 
 @Mod("meinemod")
@@ -80,7 +77,7 @@ public class ExampleMod {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, "meinemod");
 
-    // ✅ IMPORTS FROM SEPARATE FILES
+    // ✅ ALL ITEMS NOW IMPORT FROM SEPARATE FILES
     public static final RegistryObject<Item> SUPER_FEUER_WAFFE = ITEMS.register("super_feuer_waffe",
             () -> new SuperFeuerItem());
 
@@ -96,7 +93,6 @@ public class ExampleMod {
     public static final RegistryObject<Item> ZEIT_ITEM = ITEMS.register("zeit_item",
             () -> new ZeitItem());
 
-    // ✅ NOW IMPORTS FROM SEPARATE EisItem.java FILE
     public static final RegistryObject<Item> EIS_ITEM = ITEMS.register("eis_item",
             () -> new EisItem());
 
@@ -151,42 +147,14 @@ public class ExampleMod {
         });
     }
 
-    // ============= 4. ITEM CLASSES =============
-
-    // --- Blitz Zauberstab ---
-    public static class BlitzZauberstabItem extends Item {
-        public BlitzZauberstabItem() {
-            super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1).durability(75).rarity(Rarity.RARE).fireResistant());
-        }
-
-        @Override
-        public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-            ItemStack stack = player.getItemInHand(hand);
-            if (!world.isClientSide) {
-                Vec3 start = player.getEyePosition();
-                Vec3 end = start.add(player.getLookAngle().scale(50.0));
-                BlockHitResult rayTrace = world.clip(new ClipContext(start, end, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, player));
-                Vec3 hitPos = rayTrace.getLocation();
-
-                LightningBolt lightning = EntityType.LIGHTNING_BOLT.create(world);
-                if (lightning != null) {
-                    lightning.setPos(hitPos.x, hitPos.y, hitPos.z);
-                    world.addFreshEntity(lightning);
-                }
-                stack.hurtAndBreak(3, player, (p) -> p.broadcastBreakEvent(hand));
-                player.getCooldowns().addCooldown(this, 30);
-            }
-            player.swing(hand, true);
-            return InteractionResultHolder.success(stack);
-        }
-    }
+    // ============= 4. ITEM CLASSES (INNER STUBS - CONSIDER MOVING TO SEPARATE FILES) =============
 
     // --- Creative Destruction Pickaxe ---
     public static class CreativeDestructionPickaxe extends Item {
         public CreativeDestructionPickaxe() {
             super(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).stacksTo(1).rarity(Rarity.EPIC).fireResistant());
         }
-        // ... (Keep your mineBlock and shootTNT logic here) ...
+        // TODO: Add mineBlock and shootTNT logic here
     }
 
     // --- Skill Tree Book ---
@@ -252,10 +220,9 @@ public class ExampleMod {
         }
 
         private void freezeAlleMobs(Level world, Player player) {
-            // NUR LivingEntitys (Mobs + Tiere) - KEINE UUIDs!
             var entities = world.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(50));
             for (LivingEntity entity : entities) {
-                if (entity == player) continue; // Spieler ausnehmen
+                if (entity == player) continue;
 
                 entity.setDeltaMovement(Vec3.ZERO);
                 entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 999999, 255));
@@ -268,7 +235,6 @@ public class ExampleMod {
             for (LivingEntity entity : entities) {
                 if (entity == player) continue;
 
-                // FIXED: Properly remove the slowdown effects
                 entity.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
                 entity.removeEffect(MobEffects.DIG_SLOWDOWN);
             }
@@ -307,7 +273,6 @@ public class ExampleMod {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, "meinemod");
 
-    // This creates the actual Unicorn type
     public static final RegistryObject<EntityType<UnicornEntity>> UNICORN =
             ENTITIES.register("unicorn", () -> EntityType.Builder.of(UnicornEntity::new, MobCategory.CREATURE)
                     .sized(1.2f, 1.5f)
