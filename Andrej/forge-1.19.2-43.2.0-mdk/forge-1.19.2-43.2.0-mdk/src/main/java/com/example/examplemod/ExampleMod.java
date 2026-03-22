@@ -80,8 +80,10 @@ public class ExampleMod {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, "meinemod");
 
+    // ✅ NOW IMPORTS FROM SEPARATE FILE
     public static final RegistryObject<Item> SUPER_FEUER_WAFFE = ITEMS.register("super_feuer_waffe",
             () -> new SuperFeuerItem());
+
     public static final RegistryObject<Item> BLITZ_ZAUBERSTAB = ITEMS.register("blitz_zauberstab",
             () -> new BlitzZauberstabItem());
     public static final RegistryObject<Item> CREATIVE_SPITZHACKE = ITEMS.register("creative_spitzhacke",
@@ -145,44 +147,6 @@ public class ExampleMod {
     }
 
     // ============= 4. ITEM CLASSES =============
-
-    // --- Super Feuer Waffe ---
-    public static class SuperFeuerItem extends Item {
-        public SuperFeuerItem() {
-            super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1).durability(100).rarity(Rarity.RARE).fireResistant());
-        }
-
-        @Override
-        public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-            ItemStack stack = player.getItemInHand(hand);
-            if (!world.isClientSide) {
-                world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.GHAST_SHOOT, SoundSource.PLAYERS, 2.0F, 0.5F);
-                for (int i = 0; i < 3; i++) {
-                    SmallFireball fireball = new SmallFireball(world, player, player.getLookAngle().x * 2, player.getLookAngle().y * 2, player.getLookAngle().z * 2);
-                    fireball.setPos(player.getX(), player.getEyeY() - 0.5, player.getZ());
-                    world.addFreshEntity(fireball);
-                }
-                stack.hurtAndBreak(2, player, (p) -> p.broadcastBreakEvent(hand));
-            }
-            player.getCooldowns().addCooldown(this, 10);
-            player.swing(hand, true);
-            return InteractionResultHolder.success(stack);
-        }
-
-        @Override
-        public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-            if (!attacker.level.isClientSide) {
-                target.hurt(DamageSource.mobAttack(attacker), 15.0F);
-                target.push(attacker.getLookAngle().x * 3, 2.0, attacker.getLookAngle().z * 3);
-                target.setSecondsOnFire(5);
-                stack.hurtAndBreak(3, attacker, (p) -> p.broadcastBreakEvent(attacker.getUsedItemHand()));
-            }
-            return true;
-        }
-
-        @Override
-        public boolean isFoil(ItemStack stack) { return true; }
-    }
 
     // --- Blitz Zauberstab ---
     public static class BlitzZauberstabItem extends Item {
