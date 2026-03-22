@@ -80,18 +80,23 @@ public class ExampleMod {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, "meinemod");
 
-    // ✅ NOW IMPORTS FROM SEPARATE FILE
+    // ✅ IMPORTS FROM SEPARATE FILES
     public static final RegistryObject<Item> SUPER_FEUER_WAFFE = ITEMS.register("super_feuer_waffe",
             () -> new SuperFeuerItem());
 
     public static final RegistryObject<Item> BLITZ_ZAUBERSTAB = ITEMS.register("blitz_zauberstab",
             () -> new BlitzZauberstabItem());
+
     public static final RegistryObject<Item> CREATIVE_SPITZHACKE = ITEMS.register("creative_spitzhacke",
             () -> new CreativeDestructionPickaxe());
+
     public static final RegistryObject<Item> SKILL_TREE_BOOK = ITEMS.register("skill_tree_book",
             () -> new SkillTreeBookItem());
+
     public static final RegistryObject<Item> ZEIT_ITEM = ITEMS.register("zeit_item",
             () -> new ZeitItem());
+
+    // ✅ NOW IMPORTS FROM SEPARATE EisItem.java FILE
     public static final RegistryObject<Item> EIS_ITEM = ITEMS.register("eis_item",
             () -> new EisItem());
 
@@ -295,22 +300,6 @@ public class ExampleMod {
             tooltip.add(Component.literal("§6Rechtsklick: §c⏸ FREEZE / ▶ UNFREEZE").withStyle(ChatFormatting.GRAY));
             tooltip.add(Component.literal("§850 Block Radius - §cEPISCH!").withStyle(ChatFormatting.DARK_GRAY));
             super.appendHoverText(stack, world, tooltip, flag);
-        }
-    }
-
-    // --- Eis Item ---
-    public static class EisItem extends Item {
-        public EisItem() {
-            super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1).rarity(Rarity.UNCOMMON));
-        }
-
-        @Override
-        public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-            ItemStack stack = player.getItemInHand(hand);
-            if (!world.isClientSide) {
-                // TODO: Add Eis (Ice) item functionality here
-            }
-            return InteractionResultHolder.success(stack);
         }
     }
 

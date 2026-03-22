@@ -45,7 +45,7 @@ public class EisItem extends Item {
 
     // ─── Inner Forge Event Handler ────────────────────────────────────────────
 
-    @Mod.EventBusSubscriber(modid = "examplemod", bus = Mod.EventBusSubscriber.Bus.FORGE)
+    @Mod.EventBusSubscriber(modid = "meinemod", bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class EventHandler {
 
         @SubscribeEvent
@@ -501,30 +501,13 @@ public class EisItem extends Item {
         }
     }
 
-    private static void applyFullFreeze(LivingEntity target) {
-        AttributeInstance moveAttr = target.getAttribute(Attributes.MOVEMENT_SPEED);
-        if (moveAttr != null) {
-            moveAttr.removeModifier(FREEZE_MOVE_ID);
-            moveAttr.addTransientModifier(new AttributeModifier(
-                    FREEZE_MOVE_ID, "eisitem_freeze_move",
-                    -moveAttr.getBaseValue(), AttributeModifier.Operation.ADDITION));
-        }
-        AttributeInstance atkAttr = target.getAttribute(Attributes.ATTACK_SPEED);
-        if (atkAttr != null) {
-            atkAttr.removeModifier(FREEZE_ATTACK_ID);
-            atkAttr.addTransientModifier(new AttributeModifier(
-                    FREEZE_ATTACK_ID, "eisitem_freeze_attack",
-                    -atkAttr.getBaseValue(), AttributeModifier.Operation.ADDITION));
-        }
-    }
-
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world,
                                 List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.literal("§b§lIce Wand"));
         tooltip.add(Component.literal("§6<0.75s:    §bIce bolt 12DMG"));
         tooltip.add(Component.literal("§60.75–2.5s: §bIce Rupture 36 DMG"));
-        tooltip.add(Component.literal("§6≥4s:       §3§l Permafrost, crush everything in your way (12% max HP + 30DMG + wither effect"));
+        tooltip.add(Component.literal("§6≥4s:       §3§lPermafrost, crush everything in your way (12% max HP + 30DMG + wither effect"));
         tooltip.add(Component.literal("§7Passive: slowness & armor Reduction "));
         super.appendHoverText(stack, world, tooltip, flag);
     }
